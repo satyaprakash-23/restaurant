@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contact{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #F1C376;
+            height: 100vh;
+        }
+        label{
+            margin-bottom: 5px;
+        }
+        .form input, .form select, .form textarea {
+            width: 92%;
+            padding: 0.5rem;
+        }
+        .contact div{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact">
+        <h1>Contact Us</h1>
+        <form action="#">
+            <div class="form">
+                <label for="query">Type of Query</label>
+                <select name="choose" id="mychoose">
+                    <option value="sel" selected>Select</option>
+                    <option value="order">Order related issue</option>
+                    <option value="site">Site related issue </option>
+                    <option value="Complaint">Complaint related issue</option>
+                    <option value="others">Others</option>
+                    
+                </select>
+            </div>
+            <div class="form">
+                <label for="name">Name</label>
+                <input type="text" name="naam" id="mynaam" placeholder="Enter your Name">
+            </div>
+            <div class="form">
+                <label for="Email">Email-Id</label>
+                <input type="email" name="email" id="myemail" placeholder="Enter your Email">
+            </div>
+            <div class="form">
+                <label for="Phone">Phone Number</label>
+                <input type="number" name="number" id="mynumber" placeholder="Enter your Phone no">
+            </div>
+            <div class="radio">
+                <label for="choice">Are you a member of OnlneFoodShop: </label>
+                Yes<input type="radio" name="youeligible">
+                No<input type="radio" name="youeligible">
+            </div>
+            <div class="form">
+                <label for="query">Ellaborate your query </label>
+                <textarea name="myQuery" id="" cols="30" rows="10"></textarea>
+            </div>
+            <input type="submit">
+            <input type="reset">
+        </form>
+    </div>
+</body>
+</html>

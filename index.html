@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <style>
+        nav > img{
+            width: 60px;
+            height: 60px;
+            margin-top: 10px;
+            
+        }
+        nav{
+            display: flex;
+            width: 100vw;
+            text-align: center;
+            flex-direction: column;
+            align-items: center;
+            border: 2px solid black;
+            border-radius: 20px;
+            background-color: gray;
+        }
+        ul{
+            display: flex;
+            list-style-type: none;
+            justify-content: center;
+            
+        }
+        li{
+            margin: 15px;
+            color: white;
+            font-family: 'Ubuntu Mono', monospace;
+            font-size: 25px;
+
+        }
+        .container3{
+            width: 24vw;
+            height: 40vh;
+            box-shadow: 2px 7px 16px 19px;
+            margin-right: 38px;
+            border-radius: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            background-image: url(menu.avif);
+            background-size: cover;
+            background-position: center;
+
+            
+        }
+        button{
+            cursor: pointer;
+            background-color: yellow;
+            border-radius: 10px;
+            border: none;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        button:hover{
+            background-color: red;
+        }
+        .container4{
+            width: 24vw;
+            height: 40vh;
+            
+            box-shadow: 2px 7px 16px 19px;
+            margin-left: 38px;
+            border-radius: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            background-image: url(special1.jpg);
+            background-size: 100%;
+
+        }
+        .container2{
+            display: flex;
+            justify-content: center;
+            position: relative;
+            margin-top: 70px;
+        }
+        .container1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid black;
+            height: 85vh;
+            width: 100vw;
+            border-bottom-left-radius: 100px;
+            align-items: center;
+            background-image: url(back2.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .cont{
+            
+            width: 29vw;
+            height: 360px;
+            border: 2px solid black;
+            margin: 41px;
+            border: 2px solid black;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            
+        }
+        #top{
+            color: rgb(245, 10, 10);
+            text-align: center;
+            font-size: 46px;
+            font-family: 'Ubuntu Mono', monospace;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+        #top1{
+            text-align: center;
+            color: black;
+            font-size: 21px;
+            font-family: 'Ubuntu Mono', monospace;
+            margin-top: 0;
+        }
+        .page2{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            margin: 41px;
+        }
+        .pagehead{
+            text-align: center;
+            color: red;
+            font-family: 'Ubuntu Mono', monospace;
+            margin-top: 0;
+            font-size: 50px
+        }
+        .sec{
+            margin-top: 30px;
+        }
+        #first{
+            background-image: url(dish4.jpg);
+            background-size: cover;
+            background-position: center;
+
+        }
+        #second{
+            background-image: url(dish2.jpg);
+            background-size: cover;
+        }
+        #third{
+            background-image: url(dish2.webp);
+            background-size: cover;
+            background-position: center;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            background-color: red;
+            border-radius: 10px;
+        }
+        
+        @media(max-width:1165px){
+            #first{
+                width: 42vw;
+            }
+            #second{
+                width: 45vw;
+            }
+            #third{
+                margin-top: 20px;
+                width: 90vw;
+            }
+        }
+        @media(min-width:600px) and (max-width:815px){
+                #first{
+                    width: 90vw;
+                    margin: auto;
+                    margin-top: 10px;
+                    
+                }
+                #second{
+                    width: 90vw;
+                    margin: auto;
+                    margin-top: 10px;
+                    
+                }
+                #third{
+                    width: 90vw;
+                    margin: auto;
+                    margin-top: 10px;
+                    
+                }
+        }
+        @media(max-width:600px){
+            #first{
+                width: 90vw;
+                margin: auto;
+                margin-top: 10px;
+
+            }
+            #second{
+                width: 90vw;
+                margin: auto;
+                margin-top: 10px;
+            }
+            #third{
+                width: 90vw;
+                margin: auto;
+                margin-top: 10px;
+            }
+        }
+        /*@media only screen and (min-height:1000px){
+            #navbar{
+                height:10vh;
+            }
+            #container1::before{
+                height:39vh;
+            }
+            #container1{
+                height:44vh
+            }
+        }*/
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="top">Online</h1>
+        <h1 id="top1">FoodShop</h1>
+    </header>
+    <hr>
+    <nav>
+        <img src="logo.jpg" alt="logo.img">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="mycontact.html">ContactUs</a></li>
+        </ul>
+    </nav>
+    <div class="container1">
+        <h1>Welcome to Online FoodShop</h1>
+        <button class="btn">ORDER NOW</button>
+        <div class="container2">
+            <div class="container3">
+                <button class="btn">Prices</button>
+            </div>
+            <div class="container4">
+                <button class="btn">Specials</button>
+            </div>
+        </div>
+
+    </div>
+    <hr class="sec"> 
+    <h1 class="pagehead">Featured Products</h1>
+    <div class="page2">
+        
+        <div class="cont" id="first">
+            <button class="btn">ORDER NOW</button>
+        </div>
+        <div class="cont" id="second">
+            <button class="btn">ORDER NOW</button>
+        </div>
+        <div class="cont" id="third">
+            <button class="btn">ORDER NOW</button>
+        </div>
+    </div>
+</body>
+</html>
